@@ -1,0 +1,125 @@
+﻿/* Registration */
+
+.formRegistration {
+    background-color: #d4d4d4;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+    .formRegistration p {
+        font-size: 1.09em;
+        font-style: italic;
+        font-weight: lighter;
+        margin-left: 40px;
+    }
+
+    .formRegistration h2 {
+        padding-top: 20px;
+        margin-left: 40px;
+        font-size: 2.4em;
+    }
+
+.formRegistrationSection h5 {
+    font-size: 1.40em;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.img_registration {
+    padding-right: 30px;
+    padding-top: 100px;
+    width: 100%;
+    height: 90%
+}
+
+.input_text {
+    margin-left: 110px;
+    font-size: 12px;
+    font-style: italic;
+    width: 150%;
+    height: 35px;
+}
+
+.post_code {
+    margin-left: 110px;
+    font-size: 12px;
+    font-style: italic;
+    height: 35px;
+    display: block;
+    width: 20%;
+}
+
+.city {
+    height: 35px;
+    margin-left: 12px;
+    width: 32%;
+}
+
+.post_code, .city {
+    font-size: 12px;
+    font-style: italic;
+    display: table-cell;
+}
+
+.nr_building {
+    margin-left: 110px;
+    height: 35px;
+    width: 30%;
+}
+
+.nr_apartment {
+    height: 35px;
+    width: 22%;
+    margin-left: 10px;
+}
+
+.nr_building, .nr_apartment {
+    font-size: 12px;
+    font-style: italic;
+    display: table-cell;
+}
+
+.name {
+    margin-left: 110px;
+    height: 35px;
+    width: 25%;
+}
+
+.last_name {
+    height: 35px;
+    width: 27%;
+    margin-left: 10px;
+}
+
+.name, .last_name {
+    font-size: 12px;
+    font-style: italic;
+    display: table-cell;
+}
+
+.password {
+    margin-left: 110px;
+    height: 35px;
+    width: 25%;
+}
+
+.reapetPassword {
+    height: 35px;
+    width: 27%;
+    margin-left: 10px;
+}
+
+.password, .reapetPassword {
+    font-size: 12px;
+    font-style: italic;
+    display: table-cell;
+}
+
+.btn-save-registration {
+    margin-left: 70px;
+    background-color: #333399;
+    color: white;
+    width: 200px;
+}

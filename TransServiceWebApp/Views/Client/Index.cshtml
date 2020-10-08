@@ -1,0 +1,20 @@
+﻿@model TransServiceWebApp.ViewModel.ShowDetailsIndexViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<head>
+    <link href="~/Content/Style/ClientStyle.css" rel="stylesheet" />
+</head>
+
+<div class="container">
+    <div class="col-md-12">
+        <div class="sectionIndex">
+            <h2 class="text-center">Witaj w TransService</h2>
+            <p class="p_index text-center">Dziękujemy za powierzone zaufanie</p>
+            <p class="company_index text-center"> @Html.DisplayFor(model => model.Name)</p>
+        </div>
+    </div>
+</div>

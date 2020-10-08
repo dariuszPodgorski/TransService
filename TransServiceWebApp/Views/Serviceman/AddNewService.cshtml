@@ -1,0 +1,90 @@
+﻿@model TransServiceWebApp.ViewModel.NewServiceFormForvarderViewModel
+
+@{
+    ViewBag.Title = "AddNewService";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<head>
+    <link href="~/Content/Style/Forvarder.css" rel="stylesheet" />
+</head>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="container NewOrderFormClient">
+        <h2> Nowy serwis</h2>
+        <p>Aby wprowadzić nowy serwis do systemu <b>"TransService"</b> musisz wypełnić poniższy formularz</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Dane pojazdu</h5>
+                <hr width="300" />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.VehicleId, Model.VehicleList, new { @class = "form-control input_text" })
+                        @Html.ValidationMessageFor(model => model.VehicleId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.TotalMileage, new { htmlAttributes = new { placeholder = "Przebieg", @class = "form-control input_text" } })
+                        @Html.ValidationMessageFor(model => model.TotalMileage, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Description, new { htmlAttributes = new { placeholder = "Uwagi", @class = "form-control input_text_description" } })
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10 text-center">
+                        <input type="submit" value="Zapisz serwis" class="btn btn-save-order" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h5>Dane serwisowe</h5>
+                <hr width="300" />
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.TypeServiceId, Model.TypeServiceList, new { @class = "form-control input_text" })
+                        @Html.ValidationMessageFor(model => model.TypeServiceId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Defects, new { htmlAttributes = new { placeholder = "Uszkodzenia", @class = "form-control input_text_description" } })
+                        @Html.ValidationMessageFor(model => model.Defects, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.ReplacedParts, new { htmlAttributes = new { placeholder = "Wymienieone części", @class = "form-control input_text_description" } })
+                        @Html.ValidationMessageFor(model => model.ReplacedParts, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.DescriptionRepair, new { htmlAttributes = new { placeholder = "Opis serwisu", @class = "form-control input_text_description" } })
+                        @Html.ValidationMessageFor(model => model.DescriptionRepair, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <p class="date_transport">Data przeprowadzenia serwisu</p>
+                        @Html.EditorFor(model => model.DateService, new { htmlAttributes = new { @class = "form-control input_text" } })
+                        @Html.ValidationMessageFor(model => model.DateService, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}

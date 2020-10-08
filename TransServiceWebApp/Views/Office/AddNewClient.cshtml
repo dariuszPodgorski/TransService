@@ -1,0 +1,120 @@
+﻿@model TransServiceWebApp.ViewModel.NewClientFormViewModel
+
+@{
+    ViewBag.Title = "AddNewClient";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<head>
+    <link href="~/Content/Style/Forvarder.css" rel="stylesheet" />
+</head>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="container">
+        <div class="addNew">
+            <h2>Dodanie nowego klienta</h2>
+            <p class="p_container"> Wypełnij poniższy formularz aby zarejestrować klienta w systemie</p>
+            <div class="row formNewVehicle">
+                <div class="col-md-6">
+                    <h5>Dane przedsiębiorstwa</h5>
+                    <hr width="300" />
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.CompanyName, new { htmlAttributes = new { placeholder = "Nazwa firmy", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.CompanyName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Country, new { htmlAttributes = new { placeholder = "Kraj", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.Country, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.PostCode, new { htmlAttributes = new { placeholder = "Kod pocztowy", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.PostCode, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.City, new { htmlAttributes = new { placeholder = "Miasto", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Street, new { htmlAttributes = new { placeholder = "Ulica", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.Street, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.NumerOfBuilding, new { htmlAttributes = new { placeholder = "Numer budynku", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.NumerOfBuilding, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.NumberApartment, new { htmlAttributes = new { placeholder = "Numer mieszkania", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.NumberApartment, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.NIP, new { htmlAttributes = new { placeholder = "NIP", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.NIP, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { placeholder = "Adres e-mail", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { placeholder = "Telefon", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Fax, new { htmlAttributes = new { placeholder = "Fax", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.Fax, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div>
+                        <h5>Dane osoby kontaktowej</h5>
+                        <hr width="300" />
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.FirstNameContact, new { htmlAttributes = new { placeholder = "Imię", @class = "form-control place_vehicle" } })
+                            @Html.ValidationMessageFor(model => model.FirstNameContact, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.LastNameContact, new { htmlAttributes = new { placeholder = "Nazwisko", @class = "form-control place_vehicle" } })
+                            @Html.ValidationMessageFor(model => model.LastNameContact, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.PhoneContact, new { htmlAttributes = new { placeholder = "Telefon", @class = "form-control place_vehicle" } })
+                            @Html.ValidationMessageFor(model => model.PhoneContact, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.EmailContact, new { htmlAttributes = new { placeholder = "Adres e-mail", @class = "form-control place_vehicle" } })
+                            @Html.ValidationMessageFor(model => model.EmailContact, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="vehicleCard">
+                        <h5>Dane logowania</h5>
+                        <hr width="300" />
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Login, new { htmlAttributes = new { placeholder = "Login", @class = "form-control place_vehicle" } })
+                            @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { placeholder = "Hasło", @class = "form-control place_vehicle" } })
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.RepeatPassword, new { htmlAttributes = new { placeholder = "Powtórz hasło", @class = "form-control place_vehicle" } })
+                            @Html.ValidationMessageFor(model => model.RepeatPassword, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10 text-center">
+                                <input type="submit" value="Dodaj klienta" class="btn btn-save-registration" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+
+
+
+

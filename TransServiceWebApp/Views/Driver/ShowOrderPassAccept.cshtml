@@ -1,0 +1,75 @@
+﻿@model IEnumerable<TransServiceWebApp.ViewModel.ShowALLOrderDriverViewModel>
+
+@{
+    ViewBag.Title = "ShowOrderPassAccept";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<head>
+    <link href="~/Content/Style/Forvarder.css" rel="stylesheet" />
+</head>
+<div class="container listOrders">
+    <div class="col-md-12">
+        <h2>Lista wszystkich zleceń</h2>
+        <p>Ostatnia aktualizacja: @DateTime.Now.ToString("dd/MM/yyy")</p>
+
+        <table class="table tableList">
+            <tr>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.NameOrder)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CityReception)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MaxDateReception)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CityDelivery)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataMaxDelivery)
+                </th>
+                <th>
+                    Przyjmij / Zdaj
+                </th>
+
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NameOrder)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CityReception)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaxDateReception)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CityDelivery)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataMaxDelivery)
+                    </td>
+                    <td>
+                    
+                        <a href='@Url.Action("AcceptCargo", "Driver", new { orderId = item.OrderId }, null)'>
+                            <i class="fa  fa-check fa-lg"></i><span class="arrow"></span>
+                        </a>
+                        /
+                        <a href='@Url.Action("PassCargo", "Driver", new { orderId = item.OrderId }, null)'>
+                            <i class="fa fa-exchange fa-lg"></i><span class="arrow"></span>
+                        </a>
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

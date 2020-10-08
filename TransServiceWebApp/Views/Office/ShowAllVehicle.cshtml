@@ -1,0 +1,65 @@
+﻿@model IEnumerable<TransServiceWebApp.ViewModel.ShowAllVehicleViewModel>
+
+@{
+    ViewBag.Title = "ShowAllVehicle";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<head>
+    <link href="~/Content/Style/Forvarder.css" rel="stylesheet" />
+</head>
+
+<div class="container listOrders">
+    <div class="col-md-12">
+        <h2>Lista wszystkich pojazdów</h2>
+        <p>Ostatnia aktualizacja: @DateTime.Now.ToString("dd/MM/yyy")</p>
+        <div class="buttons">
+            <a href='@Url.Action("ShowAllVehicle", "Office")'>
+                <input type="submit" value="Dodaj nowy" class="btn btn-NewOrderButton" />
+            </a>
+
+        </div>
+        <table class="table tableList">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.RegistrationNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Marke)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Model)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EngineNumber)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RegistrationNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Marke)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Model)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EngineNumber)
+                    </td>
+                    <td>
+                        <a href='@Url.Action("ShowVehicleDetails", "Office", new { vehicleId = item.VehicleId }, null)'>
+                            <i class="fa fa-align-justify fa-lg"></i><span class="arrow"></span>
+                        </a>
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

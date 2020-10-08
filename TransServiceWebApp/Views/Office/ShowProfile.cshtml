@@ -1,0 +1,64 @@
+﻿@model TransServiceWebApp.ViewModel.ShowDetailsProfileEmployeeViewModel
+
+@{
+    ViewBag.Title = "ShowProfile";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<head>
+
+    <link href="~/Content/Style/Forvarder.css" rel="stylesheet" />
+</head>
+<div class="container infoClient">
+
+    <h2> Zobacz swoje dane</h2>
+    <p> Poniżej znajdują się wszystkie dane przedsiębiorstwa</p>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Dane podstawowe</h5>
+            <hr width="300" />
+            <div class="row">
+                <div class="col-md-6 standarDane">
+                    @Html.DisplayNameFor(model => model.NameAndLastName)
+                    <br />
+                    @Html.DisplayNameFor(model => model.DateOfBirth)
+                    <br />
+                    @Html.DisplayNameFor(model => model.Country)
+                    <br />
+                    @Html.DisplayNameFor(model => model.City)
+                    <br />
+                    @Html.DisplayNameFor(model => model.Adress)
+                    <br />
+                    @Html.DisplayNameFor(model => model.PhoneNumber)
+                    <br />
+                    @Html.DisplayNameFor(model => model.Email)
+                </div>
+                <div class="col-md-6 dbDane">
+                    @Html.DisplayFor(model => model.NameAndLastName)
+                    <br />
+                    @Html.DisplayFor(model => model.DateOfBirth)
+                    <br />
+                    @Html.DisplayFor(model => model.Country)
+                    <br />
+                    @Html.DisplayFor(model => model.City)
+                    <br />
+                    @Html.DisplayFor(model => model.Adress)
+                    <br />
+                    @Html.DisplayFor(model => model.PhoneNumber)
+                    <br />
+                    @Html.DisplayFor(model => model.Email)
+                </div>
+                <div class="buttonsShowProfile">
+                    <a href='@Url.Action("Index", "Forvarder")'>
+                        <input type="submit" value="Powrót" class="btn btn-ShowProfileButton" />
+                    </a>
+                    
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <img src="~/Content/Images/Account/Login/Login.jpg" class="imgLoginProfile" alt="profile" />
+        </div>
+    </div>
+</div>

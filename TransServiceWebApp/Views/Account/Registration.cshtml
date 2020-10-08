@@ -1,0 +1,148 @@
+﻿@model TransServiceWebApp.ViewModel.RegistrationFormViewModel
+
+@{
+    ViewBag.Title = "Registration";
+}
+
+<head>
+    <link href="~/Content/Style/RegistrationStyle.css" rel="stylesheet" />
+    <link href="~/Content/Style/IndexStyle.css" rel="stylesheet" />
+</head>
+@using (Html.BeginForm())
+{
+    <br />
+    <br />
+    @Html.AntiForgeryToken()
+
+    <div class="container formRegistration">
+        <h2> Załóż konto</h2>
+        <p>Aby korzystać z funkcji systemu <b>"TransService"</b> musisz założyć konto wypełniając poniższy formularz</p>
+        <div class="section formRegistrationSection">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Dane firmy</h5>
+                    <hr width="300" />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="col">
+                        <div class="form-group">
+                            @Html.EditorFor(model => model.CompanyName, new { htmlAttributes = new { placeholder = "Nazwa firmy", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.CompanyName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col">
+                            @Html.EditorFor(model => model.Country, new { htmlAttributes = new { placeholder = "Kraj", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.Country, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col">
+                            @Html.EditorFor(model => model.PostCode, new { htmlAttributes = new { placeholder = "Kod pocztowy", @class = "form-control post_code" } })
+                            @Html.ValidationMessageFor(model => model.PostCode, "", new { @class = "text-danger" })
+                            @Html.EditorFor(model => model.City, new { htmlAttributes = new { placeholder = "Miasto", @class = "form-control city" } })
+                            @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col">
+                            @Html.EditorFor(model => model.Street, new { htmlAttributes = new { placeholder = "Ulica", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.Street, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col">
+                            @Html.EditorFor(model => model.NumerOfBuilding, new { htmlAttributes = new { placeholder = "Nr domu", @class = "form-control nr_building" } })
+                            @Html.ValidationMessageFor(model => model.NumerOfBuilding, "", new { @class = "text-danger" })
+                            @Html.EditorFor(model => model.NumberApartment, new { htmlAttributes = new { placeholder = "Nr lokalu", @class = "form-control nr_apartment" } })
+                            @Html.ValidationMessageFor(model => model.NumberApartment, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col">
+                            @Html.EditorFor(model => model.NIP, new { htmlAttributes = new { placeholder = "NIP", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.NIP, "", new { @class = "text-danger" })
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col">
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { placeholder = "E-mail", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col">
+                            @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { placeholder = "Telefon", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <img src="~/Content/Images/Account/Registration/registration.jpeg" alt="login" class="img_registration" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Osoba kontaktowa</h5>
+                    <hr width="300" />
+
+                    <div class="form-group">
+                        <div class="col">
+                            @Html.EditorFor(model => model.FirstNameContact, new { htmlAttributes = new { placeholder = "Imie", @class = "form-control name" } })
+                            @Html.ValidationMessageFor(model => model.FirstNameContact, "", new { @class = "text-danger" })
+                            @Html.EditorFor(model => model.LastNameContact, new { htmlAttributes = new { placeholder = "Nazwisko", @class = "form-control last_name" } })
+                            @Html.ValidationMessageFor(model => model.LastNameContact, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col">
+                            @Html.EditorFor(model => model.EmailContact, new { htmlAttributes = new { placeholder = "E-mail", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.EmailContact, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col">
+                            @Html.EditorFor(model => model.PhoneContact, new { htmlAttributes = new { placeholder = "Telefon", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.PhoneContact, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Dane logowania</h5>
+                    <hr width="300" />
+                    <div class="form-group">
+                        <div class="col">
+                            @Html.EditorFor(model => model.Login, new { htmlAttributes = new { placeholder = "Login", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col">
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { type = "password", placeholder = "Hasło", @class = "form-control password" } })
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            @Html.EditorFor(model => model.RepeatPassword, new { htmlAttributes = new { type = "password", placeholder = "Powtórz hasło", @class = "form-control reapetPassword" } })
+                            @Html.ValidationMessageFor(model => model.RepeatPassword, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10 text-center">
+                            <input type="submit" value="Załóż konto" class="btn btn-save-registration" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

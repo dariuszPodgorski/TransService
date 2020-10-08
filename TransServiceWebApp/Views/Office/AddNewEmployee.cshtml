@@ -1,0 +1,137 @@
+﻿@model TransServiceWebApp.ViewModel.NewEmployeeFormOfficeViewModel
+
+@{
+    ViewBag.Title = "AddNewEmployee";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<head>
+    <link href="~/Content/Style/Forvarder.css" rel="stylesheet" />
+</head>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="container">
+        <div class="addNew">
+            <h2>Dodanie nowego pracownika</h2>
+            <p class="p_container"> Wypełnij poniższy formularz aby zarejestrować osobę w systemie</p>
+            <div class="row formNewVehicle">
+                <div class="col-md-6">
+                    <h5>Dane osobowe</h5>
+                    <hr width="300" />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { placeholder = "Imie", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { placeholder = "Nazwisko", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.DateOfBirth, new { htmlAttributes = new { @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.DateOfBirth, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Country, new { htmlAttributes = new { placeholder = "Kraj", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.Country, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.City, new { htmlAttributes = new { placeholder = "Miejscowość", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Street, new { htmlAttributes = new { placeholder = "Ulica", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.Street, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.NumberOfBuilding, new { htmlAttributes = new { placeholder = "Nr budynku", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.NumberOfBuilding, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.NumberApartment, new { htmlAttributes = new { placeholder = "Nr lokalu", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.NumberApartment, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { placeholder = "Numer telefonu", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { placeholder = "E-mail", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <h5>Dane logowania</h5>
+                    <hr width="300" />
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Login, new { htmlAttributes = new { placeholder = "Login", @class = "form-control input_text input_text" } })
+                            @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { placeholder = "Hasło", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.ChangePassword, new { htmlAttributes = new { placeholder = "Powtórz hasło", @class = "form-control input_text" } })
+                            @Html.ValidationMessageFor(model => model.ChangePassword, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <h5>Stanowisko</h5>
+                    <hr width="300" />
+
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.EmployeType, Model.EmployeeList, new { @class = "form-control input_text" })
+                            @Html.ValidationMessageFor(model => model.EmployeType, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10 text-center">
+                            <input type="submit" value="Dodaj pracownika" class="btn btn-save-registration" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

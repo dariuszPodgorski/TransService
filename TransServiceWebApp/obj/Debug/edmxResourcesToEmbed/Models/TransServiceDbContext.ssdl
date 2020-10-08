@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TransServiceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AllOrder">
+    <Key>
+      <PropertyRef Name="IdAllOrder" />
+    </Key>
+    <Property Name="IdAllOrder" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdCleint" Type="int" />
+    <Property Name="IdEmployee" Type="int" />
+    <Property Name="IdStatus" Type="int" />
+    <Property Name="IdVehicle" Type="int" />
+    <Property Name="IdTypeCargo" Type="int" />
+    <Property Name="NameOrder" Type="varchar" MaxLength="32" />
+    <Property Name="NameCompanyReception" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="CountryReception" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="PostCodeReception" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="CityReception" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="StreetReception" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="NumberOfBuildingReception" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="PhoneReception" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="EmailReception" Type="varchar" MaxLength="32" />
+    <Property Name="MaxDateReception" Type="datetime" Nullable="false" />
+    <Property Name="DescriptionReception" Type="varchar" MaxLength="128" />
+    <Property Name="NameCompanyDelivery" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="CountryDelivery" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="PostCodeDelivery" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="CItyDelivery" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="StreetDelivery" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="NumberOfBuildingDelivery" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="PhoneDelivery" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="EmailDelivery" Type="varchar" MaxLength="32" />
+    <Property Name="DataMaxDelivery" Type="datetime" Nullable="false" />
+    <Property Name="DescriptionDelivery" Type="varchar" MaxLength="128" />
+    <Property Name="LoadWeight" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="Hegiht" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="Width" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="Depth" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="DateAcceptedCargo" Type="datetime" />
+    <Property Name="LastNameIssusing" Type="varchar" MaxLength="32" />
+    <Property Name="NumerWZ" Type="varchar" MaxLength="32" />
+    <Property Name="DescriptionAcceptedCargo" Type="varchar" MaxLength="128" />
+    <Property Name="DataIssuseCargo" Type="datetime" />
+    <Property Name="LastNameAccepting" Type="varchar" MaxLength="32" />
+    <Property Name="NumberPZ" Type="varchar" MaxLength="32" />
+    <Property Name="DescriptionIssusingCargo" Type="varchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="IdCleint" />
+    </Key>
+    <Property Name="IdCleint" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdLogin" Type="int" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="Country" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="PostCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="Street" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="NumberOfBuilding" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="NumberApartment" Type="varchar" MaxLength="4" />
+    <Property Name="NIP" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="32" />
+    <Property Name="Phone" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="Fax" Type="varchar" MaxLength="10" />
+    <Property Name="FirstNameContact" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="LastNameContact" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="PhoneContact" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="EmailContact" Type="varchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="IdEmployee" />
+    </Key>
+    <Property Name="IdEmployee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdLogin" Type="int" />
+    <Property Name="IdEmployeeType" Type="int" />
+    <Property Name="FirstName" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="DateOfBirth" Type="datetime" Nullable="false" />
+    <Property Name="Country" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="Street" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="NumberBuilding" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="NumberApartment" Type="varchar" MaxLength="4" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="32" />
+    <Property Name="IndentyficatorEmployee" Type="varchar" MaxLength="32" />
+  </EntityType>
+  <EntityType Name="EmployeeType">
+    <Key>
+      <PropertyRef Name="IdEmployeeType" />
+    </Key>
+    <Property Name="IdEmployeeType" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="IdLogin" />
+    </Key>
+    <Property Name="IdLogin" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Service">
+    <Key>
+      <PropertyRef Name="IdSerwis" />
+    </Key>
+    <Property Name="IdSerwis" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdVehicle" Type="int" />
+    <Property Name="IdTypeService" Type="int" />
+    <Property Name="DateService" Type="datetime" Nullable="false" />
+    <Property Name="Defects" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="ReplacedParts" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="DescriptionRepair" Type="varchar" MaxLength="258" Nullable="false" />
+    <Property Name="TotalMileage" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="IdStatus" />
+    </Key>
+    <Property Name="IdStatus" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TypeCargo">
+    <Key>
+      <PropertyRef Name="IdTypeCargo" />
+    </Key>
+    <Property Name="IdTypeCargo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TypeService">
+    <Key>
+      <PropertyRef Name="IdTypeService" />
+    </Key>
+    <Property Name="IdTypeService" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vehicle">
+    <Key>
+      <PropertyRef Name="IdVehicle" />
+    </Key>
+    <Property Name="IdVehicle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Marke" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="CarModel" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="YearProduction" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="EngineCapacity" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="EquipmentVersion" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="TypeBody" Type="varchar" MaxLength="32" />
+    <Property Name="RegistrationNumber" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="EngineNumber" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="Color" Type="varchar" MaxLength="32" />
+  </EntityType>
+  <EntityType Name="VehicleCard">
+    <Key>
+      <PropertyRef Name="IdVehicleCard" />
+    </Key>
+    <Property Name="IdVehicleCard" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdVehicle" Type="int" />
+    <Property Name="DateOC" Type="datetime" Nullable="false" />
+    <Property Name="NumberOC" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="DateTechnicalExamination" Type="datetime" Nullable="false" />
+    <Property Name="TotalMieage" Type="varchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ALLORDER_RELATIONS_CLIENT">
+    <End Role="Client" Type="Self.Client" Multiplicity="0..1" />
+    <End Role="AllOrder" Type="Self.AllOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="IdCleint" />
+      </Principal>
+      <Dependent Role="AllOrder">
+        <PropertyRef Name="IdCleint" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ALLORDER_RELATIONS_EMPLOYEE">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="AllOrder" Type="Self.AllOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="IdEmployee" />
+      </Principal>
+      <Dependent Role="AllOrder">
+        <PropertyRef Name="IdEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ALLORDER_RELATIONS_STATUS">
+    <End Role="Status" Type="Self.Status" Multiplicity="0..1" />
+    <End Role="AllOrder" Type="Self.AllOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="IdStatus" />
+      </Principal>
+      <Dependent Role="AllOrder">
+        <PropertyRef Name="IdStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ALLORDER_RELATIONS_TYPECARG">
+    <End Role="TypeCargo" Type="Self.TypeCargo" Multiplicity="0..1" />
+    <End Role="AllOrder" Type="Self.AllOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeCargo">
+        <PropertyRef Name="IdTypeCargo" />
+      </Principal>
+      <Dependent Role="AllOrder">
+        <PropertyRef Name="IdTypeCargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ALLORDER_RELATIONS_VEHICLE">
+    <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="0..1" />
+    <End Role="AllOrder" Type="Self.AllOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="IdVehicle" />
+      </Principal>
+      <Dependent Role="AllOrder">
+        <PropertyRef Name="IdVehicle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENT_RELATIONS_LOGIN">
+    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="IdLogin" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="IdLogin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPLOYEE_RELATIONS_EMPLOYEE">
+    <End Role="EmployeeType" Type="Self.EmployeeType" Multiplicity="0..1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeType">
+        <PropertyRef Name="IdEmployeeType" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="IdEmployeeType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPLOYEE_RELATIONS_LOGIN">
+    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="IdLogin" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="IdLogin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SERVICE_RELATIONS_TYPESERV">
+    <End Role="TypeService" Type="Self.TypeService" Multiplicity="0..1" />
+    <End Role="Service" Type="Self.Service" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeService">
+        <PropertyRef Name="IdTypeService" />
+      </Principal>
+      <Dependent Role="Service">
+        <PropertyRef Name="IdTypeService" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SERVICE_RELATIONS_VEHICLE">
+    <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="0..1" />
+    <End Role="Service" Type="Self.Service" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="IdVehicle" />
+      </Principal>
+      <Dependent Role="Service">
+        <PropertyRef Name="IdVehicle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VEHICLEC_RELATIONS_VEHICLE">
+    <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="0..1" />
+    <End Role="VehicleCard" Type="Self.VehicleCard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="IdVehicle" />
+      </Principal>
+      <Dependent Role="VehicleCard">
+        <PropertyRef Name="IdVehicle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TransServiceModelStoreContainer">
+    <EntitySet Name="AllOrder" EntityType="Self.AllOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmployeeType" EntityType="Self.EmployeeType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Service" EntityType="Self.Service" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TypeCargo" EntityType="Self.TypeCargo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TypeService" EntityType="Self.TypeService" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vehicle" EntityType="Self.Vehicle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VehicleCard" EntityType="Self.VehicleCard" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ALLORDER_RELATIONS_CLIENT" Association="Self.FK_ALLORDER_RELATIONS_CLIENT">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="AllOrder" EntitySet="AllOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ALLORDER_RELATIONS_EMPLOYEE" Association="Self.FK_ALLORDER_RELATIONS_EMPLOYEE">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="AllOrder" EntitySet="AllOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ALLORDER_RELATIONS_STATUS" Association="Self.FK_ALLORDER_RELATIONS_STATUS">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="AllOrder" EntitySet="AllOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ALLORDER_RELATIONS_TYPECARG" Association="Self.FK_ALLORDER_RELATIONS_TYPECARG">
+      <End Role="TypeCargo" EntitySet="TypeCargo" />
+      <End Role="AllOrder" EntitySet="AllOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ALLORDER_RELATIONS_VEHICLE" Association="Self.FK_ALLORDER_RELATIONS_VEHICLE">
+      <End Role="Vehicle" EntitySet="Vehicle" />
+      <End Role="AllOrder" EntitySet="AllOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENT_RELATIONS_LOGIN" Association="Self.FK_CLIENT_RELATIONS_LOGIN">
+      <End Role="Login" EntitySet="Login" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPLOYEE_RELATIONS_EMPLOYEE" Association="Self.FK_EMPLOYEE_RELATIONS_EMPLOYEE">
+      <End Role="EmployeeType" EntitySet="EmployeeType" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPLOYEE_RELATIONS_LOGIN" Association="Self.FK_EMPLOYEE_RELATIONS_LOGIN">
+      <End Role="Login" EntitySet="Login" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SERVICE_RELATIONS_TYPESERV" Association="Self.FK_SERVICE_RELATIONS_TYPESERV">
+      <End Role="TypeService" EntitySet="TypeService" />
+      <End Role="Service" EntitySet="Service" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SERVICE_RELATIONS_VEHICLE" Association="Self.FK_SERVICE_RELATIONS_VEHICLE">
+      <End Role="Vehicle" EntitySet="Vehicle" />
+      <End Role="Service" EntitySet="Service" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VEHICLEC_RELATIONS_VEHICLE" Association="Self.FK_VEHICLEC_RELATIONS_VEHICLE">
+      <End Role="Vehicle" EntitySet="Vehicle" />
+      <End Role="VehicleCard" EntitySet="VehicleCard" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Style/AccountLayoutStyle.css" rel="stylesheet" />
+
+</head>
+<body>
+    @if (User.IsInRole("Client"))
+    {
+        <div class="row">
+            <div class="col-md-2">
+                <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+                <div class="nav-side-menu">
+                    <div class="brand"><img src="~/Content/Images/Logo/Logo.png" alt="logo" class="brand_logo" /></div>
+                    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                    <div class="menu-list">
+
+                        <ul id="menu-content" class="menu-content collapse out">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-th fa-lg"> </i> @Html.ActionLink("Home", "Index", "Client")
+                                </a>
+                            </li>
+                            <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                                <a href="#"><i class="fa fa-check-square-o fa-lg"></i> Zlecenia<span class="arrow"></span></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="products">
+                                <li><a href="#"> @Html.ActionLink("Pokaż wszystkie", "ShowAllOrders", "Client")</a></li>
+                                <li><a href="#">@Html.ActionLink("Dodaj nowe", "AddNewOrder", "Client") </a></li>
+                                <li><a href="#">Status</a></li>
+                            </ul>
+                            <li data-toggle="collapse" data-target="#service" class="collapsed">
+                                <a href="#"><i class="fa fa-globe fa-lg"></i> Profil<span class="arrow"></span></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="service">
+                                <li><a href="#"> @Html.ActionLink("Dane profilu", "ShowProfile", "Client")</a></li>
+                                <li><a href="#">@Html.ActionLink("Zmień dane", "EditProfile", "Client") </a></li>
+                            </ul>
+                           
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-power-off fa-lg"> </i> @Html.ActionLink("Wyloguj", "LogOut", "Account")
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-10">
+                @RenderBody()
+            </div>
+        </div>
+    }
+    else if (User.IsInRole("EmployeeForwarder"))
+    {
+        <div class="row">
+            <div class="col-md-2">
+                <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+                <div class="nav-side-menu">
+                    <div class="brand"><img src="~/Content/Images/Logo/Logo.png" alt="logo" class="brand_logo" /></div>
+                    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                    <div class="menu-list">
+
+                        <ul id="menu-content" class="menu-content collapse out">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-th fa-lg"> </i> @Html.ActionLink("Home", "Index", "Forvarder")
+                                </a>
+                            </li>
+                            <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                                <a href="#"><i class="fa fa-check-square-o fa-lg"></i>Zlecenia<span class="arrow"></span></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="products">
+                                <li><a href="#"> @Html.ActionLink("Wszystkie zlecenia", "ShowAllOrders", "Forvarder")</a></li>
+                                <li><a href="#"> @Html.ActionLink("Nowe zlecenia", "ShowAllNewOrders", "Forvarder")</a></li>
+
+                                <li><a href="#">@Html.ActionLink("Dodaj nowe", "AddNewOrder", "Forvarder") </a></li>
+                            </ul>
+
+                            <li data-toggle="collapse" data-target="#service" class="collapsed">
+                                <a href="#"><i class="fa fa-globe fa-lg"></i> Serwis <span class="arrow"></span></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="service">
+                                <li><a href="#"> @Html.ActionLink("Pokaż wszystkie", "ShowAllService", "Forvarder")</a></li>
+                                <li><a href="#"> @Html.ActionLink("Dodaj nowe", "AddNewService", "Forvarder")</a></li>
+                            </ul>
+
+                            <li data-toggle="collapse" data-target="#new" class="collapsed">
+                                <a href="#"><i class="fa fa-car fa-lg"></i> Flota <span class="arrow"></span></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="new">
+                                <li><a href="#"> @Html.ActionLink("Pokaż wszystkie", "ShowAllVehicle", "Forvarder")</a></li>
+                                <li><a href="#"> @Html.ActionLink("Dodaj nowy", "AddNewVehicle", "Forvarder")</a></li>
+
+                            </ul>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-user fa-lg"> </i> @Html.ActionLink("Profil", "ShowProfile", "Forvarder")
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-power-off fa-lg"> </i> @Html.ActionLink("Wyloguj", "LogOut", "Account")
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-10">
+                @RenderBody()
+            </div>
+        </div>
+    }
+    else if (User.IsInRole("EmployeeServiceMan"))
+    {
+        <div class="row">
+            <div class="col-md-2">
+                <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+                <div class="nav-side-menu">
+                    <div class="brand"><img src="~/Content/Images/Logo/Logo.png" alt="logo" class="brand_logo" /></div>
+                    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                    <div class="menu-list">
+
+                        <ul id="menu-content" class="menu-content collapse out">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-th fa-lg"> </i> @Html.ActionLink("Home", "Index", "Serviceman")
+                                </a>
+                            </li>
+                            <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                                <a href="#"><i class="fa fa-globe fa-lg"></i>Serwis<span class="arrow"></span></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="products">
+                                <li><a href="#"> @Html.ActionLink("Pokaż wszystkie", "ShowAllService", "Serviceman")</a></li>
+                                <li><a href="#">@Html.ActionLink("Dodaj nowy", "AddNewService", "Serviceman") </a></li>
+
+                            </ul>
+
+                            <li data-toggle="collapse" data-target="#service" class="collapsed">
+                                <a href="#"><i class="fa fa-car fa-lg"></i>Flota <span class="arrow"></span></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="service">
+                                <li><a href="#"> @Html.ActionLink("Pokaż wszystkie", "ShowAllVehicle", "Serviceman")</a></li>
+                                <li><a href="#">@Html.ActionLink("Dodaj nowy", "AddNewVehicle", "Serviceman") </a></li>
+                            </ul>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-user fa-lg"> </i> @Html.ActionLink("Profil", "ShowProfile", "Serviceman")
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-power-off fa-lg"> </i> @Html.ActionLink("Wyloguj", "LogOut", "Account")
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                @RenderBody()
+            </div>
+        </div>
+
+    }
+    else if (User.IsInRole("EmployeeDriver"))
+    {
+        <div class="row">
+            <div class="col-md-2">
+                <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+                <div class="nav-side-menu">
+                    <div class="brand"><img src="~/Content/Images/Logo/Logo.png" alt="logo" class="brand_logo" /></div>
+                    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                    <div class="menu-list">
+
+                        <ul id="menu-content" class="menu-content collapse out">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-th fa-lg"> </i> @Html.ActionLink("Home", "Index", "Serviceman")
+                                </a>
+                            </li>
+                            <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                                <a href="#"><i class="fa fa-check-square-o fa-lg"></i> Zlecenia<span class="arrow"></span></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="products">
+                                <li><a href="#"> @Html.ActionLink("Pokaż wszystkie", "ShowAllOrder", "Driver")</a></li>
+                                <li><a href="#"> @Html.ActionLink("Przyjmij/Zdaj ładunek", "ShowOrderPassAccept", "Driver")</a></li>
+                            </ul>
+
+                         
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-user fa-lg"> </i> @Html.ActionLink("Profil", "ShowProfile", "Driver")
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-power-off fa-lg"> </i> @Html.ActionLink("Wyloguj", "LogOut", "Account")
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                @RenderBody()
+            </div>
+        </div>
+
+    }
+    else if (User.IsInRole("EmployeeOffice"))
+    {
+        <div class="row">
+            <div class="col-md-2">
+                <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+                <div class="nav-side-menu">
+                    <div class="brand"><img src="~/Content/Images/Logo/Logo.png" alt="logo" class="brand_logo" /></div>
+                    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                    <div class="menu-list">
+
+                        <ul id="menu-content" class="menu-content collapse out">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-th fa-lg"> </i> @Html.ActionLink("Home", "Index", "Serviceman")
+                                </a>
+                            </li>
+                            <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                                <a href="#"><i class="fa fa-globe fa-lg"></i>Serwis<span class="arrow"></span></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="products">
+                                <li><a href="#"> @Html.ActionLink("Pokaż wszystkie", "ShowAllService", "Office")</a></li>
+                                <li><a href="#">@Html.ActionLink("Dodaj nowy", "AddNewService", "Office") </a></li>
+
+                            </ul>
+
+                            <li data-toggle="collapse" data-target="#service" class="collapsed">
+                                <a href="#"><i class="fa fa-car fa-lg"></i>Flota <span class="arrow"></span></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="service">
+                                <li><a href="#"> @Html.ActionLink("Pokaż wszystkie", "ShowAllVehicle", "Office")</a></li>
+                                <li><a href="#">@Html.ActionLink("Dodaj nowy", "AddNewVehicle", "Office") </a></li>
+                            </ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-users fa-lg"> </i> @Html.ActionLink(" Klienci", "ShowAllClients", "Office")
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-users fa-lg"> </i> @Html.ActionLink("Pracownicy", "ShowAllEmployee", "Office")
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-user fa-lg"> </i> @Html.ActionLink("Profil", "ShowProfile", "Office")
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-power-off fa-lg"> </i> @Html.ActionLink("Wyloguj", "LogOut", "Account")
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                @RenderBody()
+            </div>
+        </div>
+
+    }
+
+
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>

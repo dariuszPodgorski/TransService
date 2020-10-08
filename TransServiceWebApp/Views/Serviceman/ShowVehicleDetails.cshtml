@@ -1,0 +1,64 @@
+﻿@model TransServiceWebApp.ViewModel.ShowVehicleDetailsViewModel
+
+@{
+    ViewBag.Title = "ShowVehicleDetails";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<head>
+
+    <link href="~/Content/Style/Forvarder.css" rel="stylesheet" />
+</head>
+
+<div class="container infoClient">
+
+    <h2> Pojazd: @Html.DisplayFor(model => model.Marke) @Html.DisplayFor(model => model.Model)</h2>
+    <p> Numer rejestracyjny: @Html.DisplayFor(model => model.RegistrationNumber)</p>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Dane pojazdu</h5>
+            <hr width="300" />
+            <div class="row">
+                <div class="col-md-6 standarDane">
+                    @Html.DisplayNameFor(model => model.YearProduction)
+                    <br />
+                    @Html.DisplayNameFor(model => model.EngineCompacity)
+                    <br />
+                    @Html.DisplayNameFor(model => model.EquipmentVersion)
+                    <br />
+                    @Html.DisplayNameFor(model => model.TypeBody)
+                    <br />
+                    @Html.DisplayNameFor(model => model.EngineNumber)
+                    <br />
+                    @Html.DisplayNameFor(model => model.Color)
+                </div>
+                <div class="col-md-6 dbDane">
+                    @Html.DisplayFor(model => model.YearProduction)
+                    <br />
+                    @Html.DisplayFor(model => model.EngineCompacity)
+                    <br />
+                    @Html.DisplayFor(model => model.EquipmentVersion)
+                    <br />
+                    @Html.DisplayFor(model => model.TypeBody)
+                    <br />
+                    @Html.DisplayFor(model => model.EngineNumber)
+                    <br />
+                    @Html.DisplayFor(model => model.Color)
+                    <div class="buttons">
+                        <a href='@Url.Action("ShowAllVehicle", "Serviceman")'>
+                            <input type="submit" value="Wszystkie pojazdy" class="btn btn-NewOrderButtonBig" />
+                        </a>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-6">
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

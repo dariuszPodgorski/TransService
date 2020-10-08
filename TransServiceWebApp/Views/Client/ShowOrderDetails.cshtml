@@ -1,0 +1,227 @@
+﻿@model TransServiceWebApp.ViewModel.ShowDetailsOrderViewModel
+
+@{
+    ViewBag.Title = "ShowOrderDetails";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<h2>ShowOrderDetails</h2>
+
+<div>
+    <h4>ShowDetailsOrderViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StatusName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeCargoName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeCargoName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameCompanyReception)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameCompanyReception)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountryReception)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountryReception)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostCodeReception)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostCodeReception)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CityReception)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CityReception)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StreetReception)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StreetReception)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfBuildingReception)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfBuildingReception)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneReception)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneReception)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailReception)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailReception)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxDateReception)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxDateReception)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescriptionReception)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescriptionReception)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameCompanyDelivery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameCompanyDelivery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountryDelivery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountryDelivery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostCodeDelivery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostCodeDelivery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CityDelivery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CityDelivery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StreetDelivery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StreetDelivery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfBuildingDelivery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfBuildingDelivery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneDelivery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneDelivery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailDelivery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailDelivery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataMaxDelivery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataMaxDelivery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescriptionDelivery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescriptionDelivery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoadWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoadWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Height)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Width)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Width)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Depth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Depth)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

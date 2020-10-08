@@ -1,0 +1,76 @@
+﻿@model IEnumerable<TransServiceWebApp.ViewModel.ShowAllOrderViewModel>
+
+@{
+    ViewBag.Title = "ShowAllOrders";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+
+<head>
+    <link href="~/Content/Style/ClientStyle.css" rel="stylesheet" />
+</head>
+
+<div class="container listOrders">
+    <div class="col-md-12">
+        <h2>Lista wszystkich zleceń</h2>
+        <p>Ostatnia aktualizacja: @DateTime.Now.ToString("dd/MM/yyy")</p>
+        <div class="buttons">
+            <a href='@Url.Action("AddNewOrder", "Client")'>
+                <input type="submit" value="Dodaj nowe" class="btn btn-NewOrderButton" />
+            </a>
+            
+        </div>
+        <table class="table tableList">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NameOrder)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.CityReception)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MaxDateReception)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CityDelivery)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataMaxDelivery)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StatusName)
+                </th>
+
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NameOrder)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CityReception)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaxDateReception)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CityDelivery)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataMaxDelivery)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StatusName)
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+
+    </div>
+</div>

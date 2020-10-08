@@ -1,0 +1,221 @@
+﻿@model TransServiceWebApp.ViewModel.NewOrderFormClientViewModel
+
+@{
+    ViewBag.Title = "AddNewOrder";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<head>
+    <link href="~/Content/Style/ClientStyle.css" rel="stylesheet" />
+</head>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="container NewOrderFormClient">
+        <h2> Złóż nowe zlecenie</h2>
+        <p>Aby złożyc zamówienie w systemie <b>"TransService"</b> musisz wypełnić poniższy formularz</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Dane odbioru ładunku</h5>
+                <hr width="300" />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.NameCompanyReception, new { htmlAttributes = new { placeholder = "Nazwa firmy", @class = "form-control input_text" } })
+                        @Html.ValidationMessageFor(model => model.NameCompanyReception, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.CountryReception, new { htmlAttributes = new { placeholder = "Kraj", @class = "form-control input_text" } })
+                        @Html.ValidationMessageFor(model => model.CountryReception, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.PostCodeReception, new { htmlAttributes = new { placeholder = "Kod pocztowy", @class = "form-control post_code" } })
+                        @Html.ValidationMessageFor(model => model.PostCodeReception, "", new { @class = "text-danger" })
+                        @Html.EditorFor(model => model.CityReception, new { htmlAttributes = new { placeholder = "Miasto", @class = "form-control city" } })
+                        @Html.ValidationMessageFor(model => model.CityReception, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.StreetReception, new { htmlAttributes = new { placeholder = "Ulica", @class = "form-control street" } })
+                        @Html.ValidationMessageFor(model => model.StreetReception, "", new { @class = "text-danger" })
+                        @Html.EditorFor(model => model.NumberOfBuildingReception, new { htmlAttributes = new { placeholder = "Nr budynku", @class = "form-control numberBuilding" } })
+                        @Html.ValidationMessageFor(model => model.NumberOfBuildingReception, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p class="date_transport">Data maxymalna odbioru</p>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.MaxDateReception, new { htmlAttributes = new { @class = "form-control input_text" } })
+                        @Html.ValidationMessageFor(model => model.MaxDateReception, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.PhoneReception, new { htmlAttributes = new { placeholder = "Telefon", @class = "form-control input_text" } })
+                        @Html.ValidationMessageFor(model => model.PhoneReception, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.EmailReception, new { htmlAttributes = new { placeholder = "E-mail", @class = "form-control input_text" } })
+                        @Html.ValidationMessageFor(model => model.EmailReception, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.DescriptionReception, new { htmlAttributes = new { placeholder = "Uwagi", @class = "form-control input_text_description" } })
+                        @Html.ValidationMessageFor(model => model.DescriptionReception, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <h5>Dane ładunku</h5>
+                <hr width="300" />
+
+
+
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.TypeCargoId, Model.TypeCargoList, new { @class = "form-control input_text" })
+                        @Html.ValidationMessageFor(model => model.TypeCargoId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.LoadWidth, new { htmlAttributes = new { placeholder = "Masa", @class = "form-control  dimensions1" } })
+                        @Html.ValidationMessageFor(model => model.LoadWidth, "", new { @class = "text-danger" })
+                        @Html.EditorFor(model => model.Height, new { htmlAttributes = new { placeholder = "Wysokość", @class = "form-control  dimensions2" } })
+                        @Html.ValidationMessageFor(model => model.Height, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Width, new { htmlAttributes = new { placeholder = "Szerokość", @class = "form-control dimensions1" } })
+                        @Html.ValidationMessageFor(model => model.Width, "", new { @class = "text-danger" })
+                        @Html.EditorFor(model => model.Depth, new { htmlAttributes = new { placeholder = "Głębokość", @class = "form-control dimensions2" } })
+                        @Html.ValidationMessageFor(model => model.Depth, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { placeholder = "Ilość", @class = "form-control input_text" } })
+                        @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-md-6">
+                <h5>Dane dostarczenia ładunku</h5>
+                <hr width="300" />
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.NameCompanyDelivery, new { htmlAttributes = new { placeholder = "Nazwa firmy", @class = "form-control input_text" } })
+                        @Html.ValidationMessageFor(model => model.NameCompanyDelivery, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.CountryDelivery, new { htmlAttributes = new { placeholder = "Kraj", @class = "form-control input_text" } })
+                        @Html.ValidationMessageFor(model => model.CountryDelivery, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.PostCodeDelivery, new { htmlAttributes = new { placeholder = "Kod pocztowy", @class = "form-control post_code" } })
+                        @Html.ValidationMessageFor(model => model.PostCodeDelivery, "", new { @class = "text-danger" })
+                        @Html.EditorFor(model => model.CityDelivery, new { htmlAttributes = new { placeholder = "Miasto", @class = "form-control city" } })
+                        @Html.ValidationMessageFor(model => model.CityDelivery, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.StreetDelivery, new { htmlAttributes = new { placeholder = "Ulica", @class = "form-control street" } })
+                        @Html.ValidationMessageFor(model => model.StreetDelivery, "", new { @class = "text-danger" })
+                        @Html.EditorFor(model => model.NumberOfBuildingDelivery, new { htmlAttributes = new { placeholder = "Nr budynku", @class = "form-control numberBuilding" } })
+                        @Html.ValidationMessageFor(model => model.NumberOfBuildingDelivery, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <p class="date_transport">Data maxymalna dostarczenia</p>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.DataMaxDelivery, new { htmlAttributes = new { @class = "form-control input_text" } })
+                        @Html.ValidationMessageFor(model => model.DataMaxDelivery, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.PhoneDelivery, new { htmlAttributes = new { placeholder = "Telefon", @class = "form-control input_text" } })
+                        @Html.ValidationMessageFor(model => model.PhoneDelivery, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.EmailDelivery, new { htmlAttributes = new { placeholder = "E-mail", @class = "form-control input_text" } })
+                        @Html.ValidationMessageFor(model => model.EmailDelivery, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.DescriptionDelivery, new { htmlAttributes = new { placeholder = "Uwagi", @class = "form-control input_text_description" } })
+                        @Html.ValidationMessageFor(model => model.DescriptionDelivery, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10 text-center">
+                        <input type="submit" value="Złóż zlecenie" class="btn btn-save-order" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+}

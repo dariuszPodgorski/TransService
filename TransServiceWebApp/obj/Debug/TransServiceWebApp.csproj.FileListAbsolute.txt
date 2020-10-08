@@ -1,0 +1,164 @@
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\TransServiceWebApp.dll.config
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\TransServiceWebApp.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\TransServiceWebApp.pdb
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\Antlr3.Runtime.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\EntityFramework.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\Newtonsoft.Json.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Helpers.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Mvc.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Optimization.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Razor.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.WebPages.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\WebGrease.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\EntityFramework.xml
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\Newtonsoft.Json.xml
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Helpers.xml
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Mvc.xml
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Razor.xml
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.WebPages.xml
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Optimization.xml
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\Antlr3.Runtime.pdb
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\obj\Debug\TransServiceWebApp.csprojAssemblyReference.cache
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\obj\Debug\TransServiceWebApp.csproj.CopyComplete
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\obj\Debug\TransServiceWebApp.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\obj\Debug\TransServiceWebApp.pdb
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\csc.exe
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\csc.exe.config
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\csc.rsp
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\csi.exe
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\csi.exe.config
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\csi.rsp
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.AppContext.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Console.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Net.Http.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\vbc.exe
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\vbc.exe.config
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\vbc.rsp
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dariusz Podgórski\Desktop\app z poprawkami\Projekt_styczen_2020-master\TransServiceWebApp\TransServiceWebApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\obj\Debug\TransServiceWebApp.csprojAssemblyReference.cache
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\obj\Debug\TransServiceWebApp.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\obj\Debug\TransServiceWebApp.pdb
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\TransServiceWebApp.dll.config
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\TransServiceWebApp.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\TransServiceWebApp.pdb
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\csc.exe
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\csc.exe.config
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\csc.rsp
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\csi.exe
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\csi.exe.config
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\csi.rsp
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.AppContext.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Console.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Net.Http.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\vbc.exe
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\vbc.exe.config
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\vbc.rsp
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\Antlr3.Runtime.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\EntityFramework.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\Newtonsoft.Json.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Helpers.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Mvc.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Optimization.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Razor.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.WebPages.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\WebGrease.dll
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\EntityFramework.xml
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\Newtonsoft.Json.xml
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Helpers.xml
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Mvc.xml
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Razor.xml
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.WebPages.xml
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\System.Web.Optimization.xml
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\bin\Antlr3.Runtime.pdb
+C:\Users\Dariusz Podgórski\Desktop\Projekt_inz_DP_s11722\TransServiceWebApp\TransServiceWebApp\obj\Debug\TransServiceWebApp.csproj.CopyComplete

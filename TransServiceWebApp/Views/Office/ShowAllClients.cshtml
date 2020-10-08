@@ -1,0 +1,77 @@
+﻿@model IEnumerable<TransServiceWebApp.ViewModel.ShowAllClientsViewModel>
+
+@{
+    ViewBag.Title = "ShowAllClients";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<head>
+    <link href="~/Content/Style/Forvarder.css" rel="stylesheet" />
+</head>
+<div class="container listOrders">
+    <div class="col-md-12">
+        <h2>Lista wszystkich klientów</h2>
+        <p>Ostatnia aktualizacja: @DateTime.Now.ToString("dd/MM/yyy")</p>
+        <div class="buttons">
+            <a href='@Url.Action("AddNewClient", "Office")'>
+                <input type="submit" value="Nowy klient" class="btn btn-NewOrderButton" />
+            </a>
+
+        </div>
+        <table class="table tableList">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CompanyName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NIP)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PostCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Street)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumberOfBuilding)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumberApartment)
+                </th>
+
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CompanyName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NIP)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PostCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Street)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NumberOfBuilding)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NumberApartment)
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

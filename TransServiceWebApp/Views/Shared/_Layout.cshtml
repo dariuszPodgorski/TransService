@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg navigation">
+        <div class="container">
+            <a href='@Url.Action("Index", "Home")'>
+                <img src="~/Content/Images/Logo/Logo.png" width="150" height="50" alt="logo" />
+            </a>
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <div class="navbar-nav navContent">
+                        <a href="#" class="nav-item nav-link active text-warning">START</a>
+                        <a href='@Url.Action("Contact", "Home")'>
+                            <p class="nav-item nav-link">FLOTA</p>
+                        </a>
+                        <a href='@Url.Action("Contact", "Home")'>
+                            <p class="nav-item nav-link">KIERUNKI</p>
+                        </a>
+                        <a href='@Url.Action("Contact", "Home")'>
+                            <p class="nav-item nav-link">REALIZACJE</p>
+                        </a>
+                        <a href='@Url.Action("Contact", "Home")'>
+                            <p class="nav-item nav-link">GALERIA</p>
+                        </a>
+                        <a href='@Url.Action("Contact", "Home")'>
+                            <p class="nav-item nav-link">KONTAKT</p>
+                        </a>
+                        <a href='@Url.Action("Login", "Account")'>
+                            <input type="submit" value="TransService" class="btn btn-transService" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TransServiceModelStoreContainer" CdmEntityContainer="TransServiceDbContext">
+    <EntitySetMapping Name="AllOrder">
+      <EntityTypeMapping TypeName="TransServiceModel.AllOrder">
+        <MappingFragment StoreEntitySet="AllOrder">
+          <ScalarProperty Name="IdAllOrder" ColumnName="IdAllOrder" />
+          <ScalarProperty Name="IdCleint" ColumnName="IdCleint" />
+          <ScalarProperty Name="IdEmployee" ColumnName="IdEmployee" />
+          <ScalarProperty Name="IdStatus" ColumnName="IdStatus" />
+          <ScalarProperty Name="IdVehicle" ColumnName="IdVehicle" />
+          <ScalarProperty Name="IdTypeCargo" ColumnName="IdTypeCargo" />
+          <ScalarProperty Name="NameOrder" ColumnName="NameOrder" />
+          <ScalarProperty Name="NameCompanyReception" ColumnName="NameCompanyReception" />
+          <ScalarProperty Name="CountryReception" ColumnName="CountryReception" />
+          <ScalarProperty Name="PostCodeReception" ColumnName="PostCodeReception" />
+          <ScalarProperty Name="CityReception" ColumnName="CityReception" />
+          <ScalarProperty Name="StreetReception" ColumnName="StreetReception" />
+          <ScalarProperty Name="NumberOfBuildingReception" ColumnName="NumberOfBuildingReception" />
+          <ScalarProperty Name="PhoneReception" ColumnName="PhoneReception" />
+          <ScalarProperty Name="EmailReception" ColumnName="EmailReception" />
+          <ScalarProperty Name="MaxDateReception" ColumnName="MaxDateReception" />
+          <ScalarProperty Name="DescriptionReception" ColumnName="DescriptionReception" />
+          <ScalarProperty Name="NameCompanyDelivery" ColumnName="NameCompanyDelivery" />
+          <ScalarProperty Name="CountryDelivery" ColumnName="CountryDelivery" />
+          <ScalarProperty Name="PostCodeDelivery" ColumnName="PostCodeDelivery" />
+          <ScalarProperty Name="CItyDelivery" ColumnName="CItyDelivery" />
+          <ScalarProperty Name="StreetDelivery" ColumnName="StreetDelivery" />
+          <ScalarProperty Name="NumberOfBuildingDelivery" ColumnName="NumberOfBuildingDelivery" />
+          <ScalarProperty Name="PhoneDelivery" ColumnName="PhoneDelivery" />
+          <ScalarProperty Name="EmailDelivery" ColumnName="EmailDelivery" />
+          <ScalarProperty Name="DataMaxDelivery" ColumnName="DataMaxDelivery" />
+          <ScalarProperty Name="DescriptionDelivery" ColumnName="DescriptionDelivery" />
+          <ScalarProperty Name="LoadWeight" ColumnName="LoadWeight" />
+          <ScalarProperty Name="Hegiht" ColumnName="Hegiht" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Depth" ColumnName="Depth" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="DateAcceptedCargo" ColumnName="DateAcceptedCargo" />
+          <ScalarProperty Name="LastNameIssusing" ColumnName="LastNameIssusing" />
+          <ScalarProperty Name="NumerWZ" ColumnName="NumerWZ" />
+          <ScalarProperty Name="DescriptionAcceptedCargo" ColumnName="DescriptionAcceptedCargo" />
+          <ScalarProperty Name="DataIssuseCargo" ColumnName="DataIssuseCargo" />
+          <ScalarProperty Name="LastNameAccepting" ColumnName="LastNameAccepting" />
+          <ScalarProperty Name="NumberPZ" ColumnName="NumberPZ" />
+          <ScalarProperty Name="DescriptionIssusingCargo" ColumnName="DescriptionIssusingCargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="TransServiceModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="IdCleint" ColumnName="IdCleint" />
+          <ScalarProperty Name="IdLogin" ColumnName="IdLogin" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="NumberOfBuilding" ColumnName="NumberOfBuilding" />
+          <ScalarProperty Name="NumberApartment" ColumnName="NumberApartment" />
+          <ScalarProperty Name="NIP" ColumnName="NIP" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="FirstNameContact" ColumnName="FirstNameContact" />
+          <ScalarProperty Name="LastNameContact" ColumnName="LastNameContact" />
+          <ScalarProperty Name="PhoneContact" ColumnName="PhoneContact" />
+          <ScalarProperty Name="EmailContact" ColumnName="EmailContact" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="TransServiceModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="IdEmployee" ColumnName="IdEmployee" />
+          <ScalarProperty Name="IdLogin" ColumnName="IdLogin" />
+          <ScalarProperty Name="IdEmployeeType" ColumnName="IdEmployeeType" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="NumberBuilding" ColumnName="NumberBuilding" />
+          <ScalarProperty Name="NumberApartment" ColumnName="NumberApartment" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="IndentyficatorEmployee" ColumnName="IndentyficatorEmployee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeType">
+      <EntityTypeMapping TypeName="TransServiceModel.EmployeeType">
+        <MappingFragment StoreEntitySet="EmployeeType">
+          <ScalarProperty Name="IdEmployeeType" ColumnName="IdEmployeeType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Login">
+      <EntityTypeMapping TypeName="TransServiceModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="IdLogin" ColumnName="IdLogin" />
+          <ScalarProperty Name="Login1" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Service">
+      <EntityTypeMapping TypeName="TransServiceModel.Service">
+        <MappingFragment StoreEntitySet="Service">
+          <ScalarProperty Name="IdSerwis" ColumnName="IdSerwis" />
+          <ScalarProperty Name="IdVehicle" ColumnName="IdVehicle" />
+          <ScalarProperty Name="IdTypeService" ColumnName="IdTypeService" />
+          <ScalarProperty Name="DateService" ColumnName="DateService" />
+          <ScalarProperty Name="Defects" ColumnName="Defects" />
+          <ScalarProperty Name="ReplacedParts" ColumnName="ReplacedParts" />
+          <ScalarProperty Name="DescriptionRepair" ColumnName="DescriptionRepair" />
+          <ScalarProperty Name="TotalMileage" ColumnName="TotalMileage" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="TransServiceModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="IdStatus" ColumnName="IdStatus" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeCargo">
+      <EntityTypeMapping TypeName="TransServiceModel.TypeCargo">
+        <MappingFragment StoreEntitySet="TypeCargo">
+          <ScalarProperty Name="IdTypeCargo" ColumnName="IdTypeCargo" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeService">
+      <EntityTypeMapping TypeName="TransServiceModel.TypeService">
+        <MappingFragment StoreEntitySet="TypeService">
+          <ScalarProperty Name="IdTypeService" ColumnName="IdTypeService" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehicle">
+      <EntityTypeMapping TypeName="TransServiceModel.Vehicle">
+        <MappingFragment StoreEntitySet="Vehicle">
+          <ScalarProperty Name="IdVehicle" ColumnName="IdVehicle" />
+          <ScalarProperty Name="Marke" ColumnName="Marke" />
+          <ScalarProperty Name="CarModel" ColumnName="CarModel" />
+          <ScalarProperty Name="YearProduction" ColumnName="YearProduction" />
+          <ScalarProperty Name="EngineCapacity" ColumnName="EngineCapacity" />
+          <ScalarProperty Name="EquipmentVersion" ColumnName="EquipmentVersion" />
+          <ScalarProperty Name="TypeBody" ColumnName="TypeBody" />
+          <ScalarProperty Name="RegistrationNumber" ColumnName="RegistrationNumber" />
+          <ScalarProperty Name="EngineNumber" ColumnName="EngineNumber" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleCard">
+      <EntityTypeMapping TypeName="TransServiceModel.VehicleCard">
+        <MappingFragment StoreEntitySet="VehicleCard">
+          <ScalarProperty Name="IdVehicleCard" ColumnName="IdVehicleCard" />
+          <ScalarProperty Name="IdVehicle" ColumnName="IdVehicle" />
+          <ScalarProperty Name="DateOC" ColumnName="DateOC" />
+          <ScalarProperty Name="NumberOC" ColumnName="NumberOC" />
+          <ScalarProperty Name="DateTechnicalExamination" ColumnName="DateTechnicalExamination" />
+          <ScalarProperty Name="TotalMieage" ColumnName="TotalMieage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

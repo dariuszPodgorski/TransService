@@ -1,0 +1,101 @@
+﻿@model TransServiceWebApp.ViewModel.NewVehicleFormViewModel
+
+@{
+    ViewBag.Title = "AddNewVehicle";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+
+<head>
+    <link href="~/Content/Style/Forvarder.css" rel="stylesheet" />
+</head>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="container">
+        <div class="addNew">
+            <h2>Dodanie nowego pojazdu do floty</h2>
+            <p class="p_container"> Wypełnij poniższy formularz aby pojazd został dodany do floty</p>
+            <div class="row formNewVehicle">
+                <div class="col-md-6">
+                    <h5>Dane pojazdu</h5>
+                    <hr width="300" />
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Marke, new { htmlAttributes = new { placeholder = "Marka", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.Marke, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.CarModel, new { htmlAttributes = new { placeholder = "Model", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.CarModel, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.YearProduction, new { htmlAttributes = new { placeholder = "Rok produkcji", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.YearProduction, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.EngineCompacity, new { htmlAttributes = new { placeholder = "Pojemność silnika", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.EngineCompacity, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.EquipmentVersion, new { htmlAttributes = new { placeholder = "Wersja wyposażenia", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.EquipmentVersion, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.TypeBody, new { htmlAttributes = new { placeholder = "Rodzaj nadwozia", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.TypeBody, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.RegistrationNumber, new { htmlAttributes = new { placeholder = "Numer rejestracyjny", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.RegistrationNumber, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.EngineNumber, new { htmlAttributes = new { placeholder = "Numer silnika", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.EngineNumber, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Color, new { htmlAttributes = new { placeholder = "Kolor", @class = "form-control place_vehicle" } })
+                        @Html.ValidationMessageFor(model => model.Color, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div>
+                        <h5>Dane ubezpieczenia</h5>
+                        <hr width="300" />
+                        <div class="col-md-10">
+                            <p class="date"><b>Data OC</b></p>
+                            @Html.EditorFor(model => model.DateOC, new { htmlAttributes = new { placeholder = "Data OC", @class = "form-control place_vehicle" } })
+                            @Html.ValidationMessageFor(model => model.DateOC, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.NumberOC, new { htmlAttributes = new { placeholder = "Numer OC", @class = "form-control place_vehicle" } })
+                            @Html.ValidationMessageFor(model => model.NumberOC, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="vehicleCard">
+                        <h5>Dane techniczne</h5>
+                        <hr width="300" />
+                        <div>
+                            <div class="col-md-10">
+                                <p class="date"><b>Data przeglądu technicznego</b></p>
+                                @Html.EditorFor(model => model.DateTechnicalExamination, new { htmlAttributes = new { @class = "form-control place_vehicle" } })
+                                @Html.ValidationMessageFor(model => model.DateTechnicalExamination, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.TotalMieage, new { htmlAttributes = new { placeholder = "Przebieg", @class = "form-control place_vehicle" } })
+                            @Html.ValidationMessageFor(model => model.TotalMieage, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10 text-center">
+                                <input type="submit" value="Dodaj pojazd" class="btn btn-save-registration" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+

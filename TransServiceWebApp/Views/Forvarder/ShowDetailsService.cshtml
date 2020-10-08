@@ -1,0 +1,82 @@
+﻿@model TransServiceWebApp.ViewModel.ShowDetailsServiceViewModel
+
+@{
+    ViewBag.Title = "ShowDetailsService";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<head>
+    <a href="~/Controllers/ServicemanController.cs"></a>
+</head>
+
+<div class="container infoClient">
+
+    <h2> Serwis pojazdu: @Html.DisplayFor(model => model.Marke) @Html.DisplayFor(model => model.Model)</h2>
+    <p> Numer rejestracyjny: @Html.DisplayFor(model => model.RegistrationNumber)</p>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Dane pojazdu</h5>
+            <hr width="300" />
+            <div class="row">
+                <div class="col-md-6 standarDane">
+                    @Html.DisplayNameFor(model => model.YearProduction)
+                    <br />
+                    @Html.DisplayNameFor(model => model.EngineCompacity)
+                    <br />
+                    @Html.DisplayNameFor(model => model.TypeBody)
+                    <br />
+                    @Html.DisplayNameFor(model => model.EngineNumber)
+                </div>
+                <div class="col-md-6 dbDane">
+                    @Html.DisplayFor(model => model.YearProduction)
+                    <br />
+                    @Html.DisplayFor(model => model.EngineCompacity) cm3
+                    <br />
+                    @Html.DisplayFor(model => model.TypeBody)
+                    <br />
+                    @Html.DisplayFor(model => model.EngineNumber)
+                </div>
+            </div>
+        </div>
+    </div>
+            <h5>Dane przeprowadzonego serwisu</h5>
+            <hr width="300" />
+            <div class="row">
+                <div class="col-md-5 standarDane">
+
+                    @Html.DisplayNameFor(model => model.DateService)
+                    <br />
+                   
+                        @Html.DisplayNameFor(model => model.Defects)
+                    
+                    <br />
+                    @Html.DisplayNameFor(model => model.ReplacedParts)
+                    <br />
+                    @Html.DisplayNameFor(model => model.DescriptionRepair)
+                    <br />
+                    @Html.DisplayNameFor(model => model.TotalMileage)
+                    <br />
+                    @Html.DisplayNameFor(model => model.Description)
+                </div>
+                <div clsas="col-md-7 dbDane">
+
+                    @Html.DisplayFor(model => model.DateService)
+                    <br />
+                    @Html.DisplayFor(model => model.Defects)
+                    <br />
+                    @Html.DisplayFor(model => model.ReplacedParts)
+                    <br />
+                    @Html.DisplayFor(model => model.DescriptionRepair)
+                    <br />
+                    @Html.DisplayFor(model => model.TotalMileage)
+                    <br />
+                    @Html.DisplayFor(model => model.Description)
+                </div>
+            </div>
+        </div>
+
+
+
+        
+
+   

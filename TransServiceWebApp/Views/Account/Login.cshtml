@@ -1,0 +1,49 @@
+﻿@model TransServiceWebApp.ViewModel.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<head>
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/Style/LoginStyle.css" rel="stylesheet" />
+    <link href="~/Content/Style/IndexStyle.css" rel="stylesheet" />
+</head>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="container loginForm">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 style="margin-top: 150px; margin-left: 120px;"> Logowanie</h2>
+                <div class="col">
+                    @Html.EditorFor(model => model.Login, new { htmlAttributes = new { placeholder = "Login", @class = "form-control login_place" } })
+                    @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { placeholder = "Hasło", @class = "form-control login_place" } })
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group button_login">
+                    <div class="col-md-offset-2 col-md-10 ">
+                        <input type="submit" value="Zaloguj się" class="btn btn-transLogin" />
+                    </div>
+                </div>
+                <div class="ble">
+                    @Html.ActionLink("Nie posiadam jeszcze konta", "Registration", "Account")
+                </div>
+            </div>
+            <div class="col-md-6">
+                <center><img src="~/Content/Images/Account/Login/Login.jpg" alt="login" class="imgLogin" /></center>
+            </div>
+
+        </div>
+    </div>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
